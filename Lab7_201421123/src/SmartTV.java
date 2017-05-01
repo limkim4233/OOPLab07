@@ -1,8 +1,6 @@
 
 public class SmartTV extends Product{
-	
-
-	
+		
 	private int channel;
 
 	public int getChannel() {
@@ -21,6 +19,7 @@ public class SmartTV extends Product{
 	public double maxSpeed(){
 		return 24;
 	}
+	
 	public boolean isConnected()
 	{
 		return true;
