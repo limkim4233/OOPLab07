@@ -1,5 +1,5 @@
 
-public class SmartTV extends Product{
+public class SmartTV extends Product implements Networked{
 	
 
 	
@@ -15,14 +15,17 @@ public class SmartTV extends Product{
 
 	@Override
 	public String getName() {
-		return null;
+		return "SmartTV";
 	}
-	
+	@Override
 	public double maxSpeed(){
+		System.out.println("Interface MaxSpeed");
 		return 24;
 	}
+	@Override
 	public boolean isConnected()
 	{
+		System.out.println("Interface Connected");
 		return true;
 	}
 
