@@ -21,12 +21,12 @@ public class Laptop extends Product implements DataStorage,Networked {
 	}
 
 	public double getFreeCapacity() {
-		System.out.println("getFreeCapacity");
-		return 0;
+		System.out.println("Laptop getFreeCapacity");
+		return 20000;
 	}
 
 	public void format() {
-		System.out.println("format");
+		System.out.println("Laptop format");
 	}
 
 	public boolean isConnected() {
@@ -35,14 +35,14 @@ public class Laptop extends Product implements DataStorage,Networked {
 	}
 
 	public double maxSpeed() {
-		System.out.println("maxSpeed");
-		return 0;
+		System.out.println("Laptop MaxSpeed");
+		return 300;
 	}
 
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Laptop";
 	}
 
 }

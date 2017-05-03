@@ -9,20 +9,27 @@ public class ProductTest {
 	    Laptop  laptop=new Laptop();
 	    Toaster  t=new Toaster();
 	    
-	    
-	    test.test(tv);
+	    System.out.println("-----SmartTV----");
+		System.out.println(tv.getName());
+		test.testNetworked(tv);
+		
+		System.out.println("-----Toaster----");
+		System.out.println(t.getName());
 		test.testCooker(t);
+		
+		System.out.println("-----Laptop----");
 		
 
 	}
-	public void testCooker(Toaster cooker)
+	public void testCooker(Cooker c)
 	{
-		System.out.println(cooker.prepareFood());
+		System.out.println(c.prepareFood());
 	}
 	
-	public void test(SmartTV networked)	
+	public void testNetworked(Networked n)	
 	{
-		System.out.println(networked.maxSpeed());
+		n.maxSpeed();
+		n.isConnected();
 	}
 	public void testProduct(Product p)
 	{
@@ -30,6 +37,11 @@ public class ProductTest {
 	     System.out.println(p.getName());
 	     System.out.println(p.getPrice());
 	      
+	}
+	public void testDataStorage(DataStorage d)
+	{
+		d.format();
+		d.getFreeCapacity();
 	}
 	
 
