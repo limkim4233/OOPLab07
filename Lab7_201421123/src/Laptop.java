@@ -1,5 +1,5 @@
 
-public class Laptop extends Product {
+public class Laptop extends Product implements DataStorage, Networked{
 
 	private double totalCapacity;
 	private double usedCapacity;
@@ -21,28 +21,24 @@ public class Laptop extends Product {
 	}
 
 	public double getFreeCapacity() {
-		System.out.println("getFreeCapacity");
-		return 0;
+		return 20000;
 	}
 
 	public void format() {
-		System.out.println("format");
+		System.out.println("format: 32");
 	}
 
 	public boolean isConnected() {
-		System.out.println("isConnected");
-		return false;
+		return true;
 	}
 
 	public double maxSpeed() {
-		System.out.println("maxSpeed");
-		return 0;
+		return 300;
 	}
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Apple Laptop";
 	}
 
 }

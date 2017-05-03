@@ -1,5 +1,5 @@
 
-public class SmartTV extends Product{
+public class SmartTV extends Product implements Networked{
 		
 	private int channel;
 
@@ -13,7 +13,7 @@ public class SmartTV extends Product{
 
 	@Override
 	public String getName() {
-		return null;
+		return "LGTV";
 	}
 	
 	public double maxSpeed(){

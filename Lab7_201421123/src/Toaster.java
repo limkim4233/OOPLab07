@@ -4,12 +4,12 @@ public class Toaster extends Product implements Cooker {
 	@Override
 	public String getName() {
 		
-		return "Toaster";
+		return "Delicious Toaster";
 	}
 	
 	@Override
 	public String prepareFood() {
 		
-		return null;
+		return "Ready for Making Bread";
 	}
 }
