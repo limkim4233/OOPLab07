@@ -40,5 +40,5 @@ public class Laptop extends Product implements DataStorage, Networked{
 	public String getName() {
 		return "Apple Laptop";
 	}
-
+	
 }
