@@ -20,13 +20,13 @@ public class SmartTV extends Product implements Networked{
 	}
 	@Override
 	public double maxSpeed(){
-		System.out.println("Interface MaxSpeed");
+		System.out.println("MaxSpeed");
 		return 24;
 	}
 
 	public boolean isConnected()
 	{
-		System.out.println("Interface Connected");
+		System.out.println("Connected");
 		return true;
 	}
 }

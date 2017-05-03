@@ -10,6 +10,6 @@ public class Toaster extends Product implements Cooker {
 	@Override
 	public String prepareFood() {
 		
-		return null;
+		return "Prepare food";
 	}
 }

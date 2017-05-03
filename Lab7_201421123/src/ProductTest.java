@@ -5,28 +5,30 @@ public class ProductTest {
 		// TODO Auto-generated method stub
 		
 		ProductTest test=new ProductTest();
-		Product  tv=new SmartTV();
-	    Product  laptop=new Laptop();
-	    Product  t=new Toaster();
+		SmartTV  tv=new SmartTV();
+	    Laptop  laptop=new Laptop();
+	    Toaster  t=new Toaster();
 	    
-	    test.testProduct(tv);
-		test.testProduct(laptop);
-		test.testProduct(t);
+	    
+	    test.test(tv);
+		test.testCooker(t);
+		
 
 	}
+	public void testCooker(Toaster cooker)
 	{
-		
+		System.out.println(cooker.prepareFood());
 	}
 	
-	public void testDataStorage(SmartTV t)	
+	public void test(SmartTV networked)	
 	{
-		
+		System.out.println(networked.maxSpeed());
 	}
 	public void testProduct(Product p)
 	{
-	      p.setPrice(20000);
-	      System.out.println(p.getPrice());
-	      System.out.println(p.getName());
+	     p.setPrice(23000);
+	     System.out.println(p.getName());
+	     System.out.println(p.getPrice());
 	      
 	}
 	
