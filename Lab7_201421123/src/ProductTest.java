@@ -9,6 +9,7 @@ public class ProductTest {
 	    Laptop  laptop=new Laptop();
 	    Toaster  t=new Toaster();
 	    
+	    
 	    System.out.println("-----SmartTV----");
 		System.out.println(tv.getName());
 		test.testNetworked(tv);

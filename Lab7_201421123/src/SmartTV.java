@@ -21,7 +21,7 @@ public class SmartTV extends Product implements Networked{
 	@Override
 	public double maxSpeed(){
 		System.out.println("MaxSpeed");
-		return 24;
+		return 200;
 	}
 
 	public boolean isConnected()
