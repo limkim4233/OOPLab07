@@ -1,6 +1,7 @@
 
 public class Laptop extends Product implements DataStorage, Networked{
 
+
 	private double totalCapacity;
 	private double usedCapacity;
 
@@ -21,11 +22,14 @@ public class Laptop extends Product implements DataStorage, Networked{
 	}
 
 	public double getFreeCapacity() {
+		System.out.println("Laptop getFreeCapacity");
 		return 20000;
 	}
 
 	public void format() {
+
 		System.out.println("format: 32");
+		System.out.println("Laptop format");
 	}
 
 	public boolean isConnected() {
@@ -33,6 +37,7 @@ public class Laptop extends Product implements DataStorage, Networked{
 	}
 
 	public double maxSpeed() {
+		System.out.println("Laptop MaxSpeed");
 		return 300;
 	}
 

@@ -1,6 +1,6 @@
 
-public class SmartTV extends Product implements Networked{
-		
+public class SmartTV extends Product implements Networked{		
+
 	private int channel;
 
 	public int getChannel() {
@@ -16,14 +16,20 @@ public class SmartTV extends Product implements Networked{
 		return "LGTV";
 	}
 	
+	@Override
 	public double maxSpeed(){
-		return 24;
-	}
-	
-	public boolean isConnected()
-	{
-		return true;
+		System.out.println("MaxSpeed");
+		return 200;
 	}
 
+	public boolean isConnected(){
+		
+		//System.out.println("Connected");
+		return true;
+	}
 }
+
+
+
+
 
