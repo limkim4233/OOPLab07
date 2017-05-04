@@ -24,7 +24,7 @@ public class SmartTV extends Product implements Networked{
 
 	public boolean isConnected(){
 		
-		//System.out.println("Connected");
+		System.out.println("Connected");
 		return true;
 	}
 }

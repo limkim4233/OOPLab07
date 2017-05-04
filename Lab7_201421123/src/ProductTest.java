@@ -19,6 +19,8 @@ public class ProductTest {
 		test.testCooker(t);
 		
 		System.out.println("-----Laptop----");
+		test.testProduct(laptop);
+		laptop.format();
 	}
 	
 	public void testCooker(Cooker c) {
@@ -31,17 +33,14 @@ public class ProductTest {
 	}
 	
 	public void testProduct(Product p) {
-	     p.setPrice(23000);
+		 p.setPrice(1700000);
 	     System.out.println(p.getName());
-	     System.out.println(p.getPrice());
-	      
+	     System.out.println("Price: " + (int) p.getPrice());	      
 	}
 	
 	public void testDataStorage(DataStorage d) {
 		d.format();
 		d.getFreeCapacity();
 	}
-	
-
 
 }

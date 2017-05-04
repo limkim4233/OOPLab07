@@ -1,6 +1,5 @@
 
-public class Laptop extends Product implements DataStorage, Networked{
-
+public class Laptop extends Product implements DataStorage, Networked {
 
 	private double totalCapacity;
 	private double usedCapacity;
@@ -27,9 +26,7 @@ public class Laptop extends Product implements DataStorage, Networked{
 	}
 
 	public void format() {
-
-		System.out.println("format: 32");
-		System.out.println("Laptop format");
+		System.out.println("Laptop format: 32");
 	}
 
 	public boolean isConnected() {
@@ -45,5 +42,5 @@ public class Laptop extends Product implements DataStorage, Networked{
 	public String getName() {
 		return "Apple Laptop";
 	}
-	
+
 }
